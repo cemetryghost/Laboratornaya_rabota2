@@ -1,4 +1,5 @@
 package com.company;
+
 import java.util.Scanner;
 
 public class Main {
@@ -19,12 +20,10 @@ public class Main {
         }
         double b = 0;
         for (int i=0; i<n+1; i++){
-            double c = Math.pow(-1, n+1);
-            double c1 = Math.pow(x, 2*n+1);
-            b += c/((2*n+1)*c1);
+            double c = Math.pow(-1, i+1);
+            double c1 = Math.pow(x, 2*i+1);
+            b += c/((2*i+1)*c1);
         }
         System.out.print(b -(Math.PI/2));
     }
 }
-
-
